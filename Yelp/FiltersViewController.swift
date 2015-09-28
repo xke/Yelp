@@ -76,7 +76,7 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
         
         filters["deals"] = dealSwitchState
         filters["sort"] = selectedSortByRow 
-        filters["radius_filter"] = distanceOptions[selectedDistanceRow][1] // meters!
+        filters["radius"] = distanceOptions[selectedDistanceRow][1] // meters!
         
         var selectedCategories = [String]()
         
@@ -91,7 +91,7 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
             filters["categories"] = selectedCategories
         }
         
-        print("Filters set up: deals=\(dealSwitchState), sort=\(selectedSortByRow), categories=\(selectedCategories)")
+        print("Filters set up: deals=\(dealSwitchState), sort=\(selectedSortByRow), categories=\(selectedCategories), radius=\(distanceOptions[selectedDistanceRow][1])")
         
         delegate?.filtersViewController?(self, didUpdateFilters: filters)
 
