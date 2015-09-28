@@ -2,7 +2,7 @@
 
 This is a Yelp client that uses the [Yelp Search API](http://www.yelp.com/developers/documentation/v2/search_api). This is also the assignment for Week 2 of the [CodePath](http://www.codepath.com) iOS for Engineers class for Fall 2015, built with [Xcode 7.0](https://developer.apple.com/xcode/download/) and Swift. 
 
-My laptop screen broken down during this past week (e.g. "the dog ate my homework"). Also, while trying to understand & finish this homework (on an external monitor), my parents kept calling about scheduling our family trip to Hawaii ASAP. It was rough, but I was able to code things up on time, and also book some plane tickets plus order a replacement laptop on eBay. Whew! :)
+My laptop screen broken down during this past week (e.g. "the dog ate my homework"). Also, while trying to understand & finish this homework (on an external monitor), my parents kept calling about scheduling our family trip to Hawaii ASAP. It was rough, but I was able to code things up on time, and also book some plane tickets plus research & order a replacement laptop on eBay. Whew! :)
 
 Time spent: 12 hours
 
