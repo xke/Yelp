@@ -34,10 +34,13 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
     let distanceOptions = [["Best Match", 0], ["1 block (0.2 km)", 200], ["10 blocks (2 km)", 2000],
                            ["3.1 miles (5 km)", 5000], ["6.2 miles (10 km)", 10000]]  // value is in meters
     var selectedDistanceRow = 0
+    var distanceDropDownExpanded = true // drop down dynamic expansion not implemented; always expanded
     
     let SectionSortBy = 2
     var sortByOptions = ["Best Match", "Distance", "Highest Rated"]
     var selectedSortByRow = 0 // matches with what Yelp API expects for "sort"
+    var sortByDropDownExpanded = true // drop down dynamic expansion not implemented; always expanded
+
     
     let SectionCategory = 3
     var categories: [[String:String]]! // filled in later
@@ -106,9 +109,9 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
             case SectionDeals:
                 return 1
             case SectionDistance:
-                return distanceOptions.count
+                return distanceDropDownExpanded ? distanceOptions.count : 1
             case SectionSortBy:
-                return sortByOptions.count
+                return sortByDropDownExpanded ? sortByOptions.count : 1
             case SectionCategory:
                 return categories.count
             default:
@@ -191,7 +194,6 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
             case SectionDistance:
                 selectedDistanceRow = indexPath.row
                 print("selectedDistanceRow to \(selectedDistanceRow)")
-
                 tableView.reloadData()
             
             case SectionSortBy:

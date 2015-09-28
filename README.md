@@ -1,8 +1,9 @@
-## Yelp (CodePath Week 2)
+## CodePath Week 2: Yelp
 
 This is a Yelp client written in Swift that uses the [Yelp Search API](http://www.yelp.com/developers/documentation/v2/search_api). The Yelp API provides an application token (OAuth 1.0a) that allows applications to make unauthenticated requests to their search API.
 
-This is also the assignment for Week 2 of the [CodePath](http://www.codepath.com) iOS for Engineers class for Fall 2015, and was built with [Xcode 7.0](https://developer.apple.com/xcode/download/) and Swift. While trying to finish this homework on time, my parents kept calling me to schedule our family trip to Hawaii. It was rough. ;) 
+This is also the assignment for Week 2 of the [CodePath](http://www.codepath.com) iOS for Engineers class for Fall 2015, and was built with [Xcode 7.0](https://developer.apple.com/xcode/download/) and Swift. While trying to understand this homework, my parents kept calling me to schedule our family trip to Hawaii. It was rough, but I was able to successfully handle their requests in addition to completing this assignment on time. :)
+
 
 Time spent: 12 hours
 
@@ -18,11 +19,6 @@ Time spent: 12 hours
 - [X] The filters table should be organized into sections as in the mock.
 - [X] You can use the default UISwitch for on/off states. 
 - [X] Clicking on the "Search" button should dismiss the filters page and trigger the search w/ the new filter settings.
-
-#### Optional Features
-
-- [X] Add a search bar using UISearchBar.
-- [X] Customize the navigation bar.
 
 #### Video Walkthrough
 ![Video Walkthrough](YelpAnimated.gif)

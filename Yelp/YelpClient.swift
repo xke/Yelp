@@ -65,7 +65,8 @@ class YelpClient: BDBOAuth1RequestOperationManager {
         if deals != nil {
             parameters["deals_filter"] = deals!
         }
-        
+        print("YelpClient searchWithTerm radius_filter = \(radius)")
+
         if radius != nil {
             parameters["radius_filter"] = radius!
         }
